@@ -83,7 +83,7 @@
                             ?> 
                         </span>
                     </div>
-                    <div class="main-footer__widget">
+                    <div class="main-footer__widget widget-contact-mail">
                         <?php
                             if (is_active_sidebar('si-footer-column-2')) {
                                 dynamic_sidebar('si-footer-column-2');
