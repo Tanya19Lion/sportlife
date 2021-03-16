@@ -37,23 +37,14 @@
                         c1.078,4.568,3.568,8.723,7.199,12.013l18.115,16.439l18.426-16.438c3.631-3.291,6.121-7.445,7.199-12.014
                         C52.216,18.553,51.97,16.611,51.911,16.242z" />
                     <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                </svg>
-                <span class="like__text">Нравится </span>
-                <span class="like__count">46</span>
+                 </svg>
+                <span class="like__text">Нравится</span>
+                <span class="like__count">
+                    <?php 
+                        $likes = get_post_meta($id, 'si-like', true);
+                        echo $likes ? $likes : 0;
+                    ?>
+                </span>
             </a>
         </footer>
     </article>
@@ -67,3 +58,4 @@
 <?php
     get_footer();
 ?>
+

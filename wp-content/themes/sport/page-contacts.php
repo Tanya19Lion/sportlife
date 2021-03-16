@@ -41,9 +41,7 @@
                 ?>
             </p>
             
-            <?php
-                the_content();
-            ?>
+            <?php the_content();  ?>
 
             <form action="#" class="contacts__form contacts-form">
                 <label class="contacts-form__label">
